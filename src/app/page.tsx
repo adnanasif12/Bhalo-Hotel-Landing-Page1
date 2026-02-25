@@ -131,7 +131,12 @@ function App() {
 
 
 // Simple Card Component
-      function InfoCard({title = "Card Title", description = "This is a simple card description.", children}) {
+      type InfoCardProps = {
+        title?: string;
+        description?: string;
+        children?: React.ReactNode;
+      };
+      function InfoCard({title = "Card Title", description = "This is a simple card description.", children}: InfoCardProps) {
        return (
         <div className="info-card">
           <h3 className="info-card-title">{title}</h3>
