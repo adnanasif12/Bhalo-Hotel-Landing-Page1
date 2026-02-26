@@ -5,12 +5,12 @@ function Hero() {
   return (
     <section className="hero-split" style={{ position: "relative" }}>
       {/* Centered Payment Methods Card overlaying both sides */}
-      <div style={{ position: 'absolute', left: '50%', top: '100%', transform: 'translate(-50%, -50%)', width: '100%', maxWidth: '90%', zIndex: 30 }}>
+      <div className="payment-methods-overlay">
         <InfoCard title="Payment Methods" description="">
-          <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', padding: '16px 0' }}>
-            <img src="/assets/paypal.png" alt="PayPal" style={{ height: '32px', objectFit: 'contain' }} />
-            <img src="/assets/sslcommerz.png" alt="SSLCommerz" style={{ height: '32px', objectFit: 'contain' }} />
-            <img src="/assets/stripe.png" alt="Stripe" style={{ height: '32px', objectFit: 'contain' }} />
+          <div className="payment-methods-flex">
+            <img src="/assets/paypal.png" alt="PayPal" className="payment-methods-img" />
+            <img src="/assets/sslcommerz.png" alt="SSLCommerz" className="payment-methods-img" />
+            <img src="/assets/stripe.png" alt="Stripe" className="payment-methods-img" />
           </div>
         </InfoCard>
       </div>
@@ -61,15 +61,7 @@ function Hero() {
   );
 }
 
-/* ---------- About Section ---------- */
-function About() {
-  return (
-    <section id="about" className="about">
-      <h3>About Us</h3>
-      <p>Bhalohotel offers premium rooms and services for your perfect stay.</p>
-    </section>
-  );
-}
+
 
 /* ---------- Features Section ---------- */
 function Features() {
@@ -120,7 +112,7 @@ function App() {
         <Hero />
       </div>
       {/* InfoCard for About Bhalohotel moved to Hero section above */}
-      <About />
+      
       <Features />
       <Contact />
       <Footer />

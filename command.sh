@@ -454,3 +454,22 @@ body {
   color: #fff;
 }
 
+
+
+
+
+
+
+
+
+
+
+{/* Centered Payment Methods Card overlaying both sides */}
+      <div style={{ position: 'absolute', left: '50%', top: '100%', transform: 'translate(-50%, -50%)', width: '100%', maxWidth: '90%', zIndex: 30 }}>
+        <InfoCard title="Payment Methods" description="">
+          <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', padding: '12px 0' }}>
+            <img src="/assets/paypal.png" alt="PayPal" style={{ height: '32px', objectFit: 'contain', padding: '0px 30px' }} />
+            <img src="/assets/sslcommerz.png" alt="SSLCommerz" style={{ height: '32px', objectFit: 'contain', padding: '0px 30px' }} />
+            <img src="/assets/stripe.png" alt="Stripe" style={{ height: '32px', objectFit: 'contain', padding: '0px 30px' }} />
+          </div>
+        </InfoCard>
