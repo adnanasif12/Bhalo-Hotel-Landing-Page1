@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+// import React, { useState } from "react";
 import "./globals.css";
 // import "./DashboardDemo.css";
 
@@ -150,6 +151,11 @@ function FeatureHighlights() {
 }
 
 
+
+
+
+
+
 // ---------- Full Website Demo Section (Dynamic Images) ----------
 interface FullWebsiteDemoProps {
   demoImages?: string[];
@@ -166,7 +172,7 @@ function FullWebsiteDemo({ demoImages }: FullWebsiteDemoProps) {
       <div className="demo-header">
         <h2>Full Website Demo</h2>
         <p>
-          Showcase all pages of your system in a modern responsive view. 
+          Showcase all pages of your system in a modern responsive view.
           Hover to see live‑style effects and use different images for every page preview.
         </p>
       </div>
@@ -187,58 +193,212 @@ function FullWebsiteDemo({ demoImages }: FullWebsiteDemoProps) {
 
 
 
-// ---------- Full Admin Dashboard Demo Section (Each frame contains 2 images) ----------
-// import "./FullAdminDashboardDemo.css";
 
-function FullAdminDemo() {
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------- Full Website Demo Section (Dynamic Images) ----------
+interface AdminFullWebsiteDemoProps {
+  demoImages?: string[];
+}
+
+function AdminFullWebsiteDemo({ demoImages }: AdminFullWebsiteDemoProps) {
+  // Default: সব ইমেজ একই থাকবে, যদি কোনো custom image list না পাওয়া যায়
+  const images = demoImages && demoImages.length > 0
+    ? demoImages
+    : Array(4).fill("/assets/Admin.png");
+
   return (
-    <section className="full-admin-dashboard-demo-section"> 
-      <div className="dashboard-title" >
-        <div className="admin-desh-demo">
-            <div className="demo-image-box">🏨</div>
-            <p>Hotel and event management integrated in one simple interface.</p>
-          </div>
+    <section id="Admin-full-website-demo" className="Admin-full-website-demo-section">
+      <div className="Admin-demo-header">
+        <h2>Full Website Demo</h2>
+        <p>
+          Showcase all pages of your system in a modern responsive view.
+          Hover to see live‑style effects and use different images for every page preview.
+        </p>
+      </div>
 
-          <div className="admin-desh-demo">
-            <div className="demo-image-box">🌍</div>
-            <p>
-              Access your full inventory anywhere with responsive dashboard
-              view.
-            </p>
+      <div className="Admin-demo-grid">
+        {images.map((src, index) => (
+          <div key={index} className="Admin-demo-card">
+            <img src={src} alt={`Website Demo ${index + 1}`} />
+            {index === 0 && (
+              <button className="Admin-live-btn">Live Website ↗</button>
+            )}
           </div>
+        ))}
       </div>
     </section>
   );
- 
-  
 }
 
 
 
-// /* ---------- Contact Section ---------- */
-// function Contact() {
-//   return (
-//     <section id="contact" className="contact">
-//       <h3>Contact</h3>
-//       <p>Email: info@bhalohotel.com</p>
-//     </section>
-//   );
-// }
 
-// /* ---------- Footer Section ---------- */
-// function Footer() {
-//   return (
-//     <footer className="footer">
-//       <p>&copy; 2026 Bhalohotel. All rights reserved.</p>
-//     </footer>
-//   );
-// }
+
+
+
+
+
+// /* ---------- FAQ Section ---------- */
+function FAQSection() {
+  const faqs = [
+    {
+      question: "Can recruiters search for candidates?",
+      answer:
+        "Yes! If job-seekers upload their CV and fill out their candidacy profile, they will be searchable by recruiters.",
+    },
+    {
+      question: "What industries are supported by Infohub?",
+      answer:
+        "We support all industries find suitable tech talent.",
+    },
+    {
+      question: "Why should I use Infohob for my recruiting needs?",
+      answer:
+        "Infohob is at the top of the job search industry in Nigeria. We find strength in connecting tech job seekers and recruiters.",
+    },
+    {
+      question: "Why should I use Infohob for my recruiting needs?",
+      answer:
+        "Infohob is at the top of the job search industry in Nigeria. We find strength in connecting tech job seekers and recruiters.",
+    },
+    {
+      question: "Why should I use Infohob for my recruiting needs?",
+      answer:
+        "Infohob is at the top of the job search industry in Nigeria. We find strength in connecting tech job seekers and recruiters.",
+    },
+  ];
+
+  return (
+    <section className="faq-section">
+      <div className="faq-header">
+            <h2 className="faq-title">
+              Have any <span>Questions<span className="faq-title-accent">?</span></span>
+            </h2>
+            <div className="faq-title-underline" />
+            <p className="faq-subtitle">
+              Lorem ipsum dolor sit amet, consectetur sadipscing elit, sed diam nonumy eirmod tempor invidunt ut labore et dolore.
+            </p>
+      </div>
+      <div className="faq-container">
+        <div className="faq-illustration-col">
+          <div className="faq-illustration-wrapper">
+            <img src="/assets/faq-illustration.png" alt="FAQ Illustration" className="faq-illustration-img" />
+          </div>
+        </div>
+        <div className="faq-content-col">
+          
+          <div className="faq-list">
+            {faqs.map((faq, idx) => (
+              <div key={idx} className="faq-item">
+                <div className="faq-item-row">
+                  <span className="faq-item-question">{faq.question}</span>
+                  <span className="faq-item-divider">—</span>
+                </div>
+                <span className="faq-item-answer">{faq.answer}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------- Full Website Demo Section (Dynamic Images) ----------
+interface UniqueFeaturesProps {
+  demoImages?: string[];
+}
+
+function UniqueFeatures({ demoImages }: UniqueFeaturesProps) {
+  // Default: সব ইমেজ একই থাকবে, যদি কোনো custom image list না পাওয়া যায়
+  const images = demoImages && demoImages.length > 0
+    ? demoImages
+    : Array(15).fill("/assets/MobileApp.png");
+  return (
+    <section id="unique-features" className="unique-features-section">
+      <div className="unique-features-header">
+        <h2>Unique Features</h2>
+        <p>
+          Showcase all pages of your system in a modern responsive view.
+          Hover to see live‑style effects and use different images for every page preview.
+        </p>
+      </div>
+
+      <div className="unique-features-grid">
+        {images.map((src, index) => (
+          <div key={index} className="unique-features-card">
+           <img src={src} alt={`Website Demo ${index + 1}`} />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---------- Main App ---------- */
 function App() {
   return (
     <div className="landing-container bg-color- relative-container">
-      
+
       {/* Hero section with dot-pattern background visually aligned */}
       <div className="hero-dot-wrapper">
         <div className="dot-pattern dot-custom-pos"></div>
@@ -248,7 +408,9 @@ function App() {
       <DashboardDemo />
       <FeatureHighlights />
       <FullWebsiteDemo />
-      <FullAdminDemo />
+      <AdminFullWebsiteDemo />
+      <FAQSection />
+      <UniqueFeatures />
       {/* <Contact /> */}
       {/* <Footer /> */}
     </div>

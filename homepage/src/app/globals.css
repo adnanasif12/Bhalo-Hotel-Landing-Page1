@@ -1,4 +1,434 @@
 
+/* ---------- Unique Features Section ---------- */
+.unique-features-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.unique-features-header {
+  text-align: center;
+  max-width: 700px;
+}
+
+.unique-features-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0b0b0b;
+  margin-bottom: 10px;
+}
+
+.unique-features-header p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* grid for all demo cards */
+.unique-features-grid {
+  width: 90%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.unique-features-card {
+  position: relative;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.unique-features-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.unique-features-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* floating button on first card */
+.live-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #00a9a7;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  opacity: 0;
+  cursor: pointer;
+  box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.unique-features-card:hover .live-btn {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .unique-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .unique-features-section {
+    padding: 80px 0;
+    gap: 40px;
+  }
+
+  .unique-features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .unique-features-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .unique-features-header p {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FAQSection Styles */
+.faq-section {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2rem;
+  
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 3rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-container{
+  display: flex;
+}
+
+
+
+@media (min-width: 768px) {
+  .faq-section {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+.faq-illustration-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .faq-illustration-col {
+    width: 50%;
+  }
+}
+.faq-illustration-wrapper {
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  margin-bottom: 1rem;
+}
+.faq-illustration-img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.faq-content-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .faq-content-col {
+    width: 50%;
+  }
+}
+.faq-header {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #23272a;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .faq-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+.faq-title-accent {
+  color: #FFC107;
+}
+.faq-title-underline {
+  width: 8rem;
+  height: 0.25rem;
+  background: #FFC107;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.faq-subtitle {
+  color: #6b7280;
+  text-align: center;
+  font-size: 1rem;
+}
+.faq-list {
+  width: 100%;
+}
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.faq-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq-item-question {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #23272a;
+}
+.faq-item-divider {
+  color: #bdbdbd;
+  font-size: 1.5rem;
+}
+.faq-item-answer {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- Full Website Demo Section ---------- */
+.Admin-full-website-demo-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.Admin-demo-header {
+  text-align: center;
+  max-width: 700px;
+}
+
+.Admin-demo-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0b0b0b;
+  margin-bottom: 10px;
+}
+
+.Admin-demo-header p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* grid for all demo cards */
+.Admin-demo-grid {
+  width: 90%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.Admin-demo-card {
+  position: relative;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Admin-demo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.Admin-demo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* floating button on first card */
+.Admin-live-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #00a9a7;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  opacity: 0;
+  cursor: pointer;
+  box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.Admin-demo-card:hover .Admin-live-btn {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .Admin-demo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Admin-full-website-demo-section {
+    padding: 80px 0;
+    gap: 40px;
+  }
+
+  .Admin-demo-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .Admin-demo-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .Admin-demo-header p {
+    font-size: 0.95rem;
+  }
+}
+
 
 
 
