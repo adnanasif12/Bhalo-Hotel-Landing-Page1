@@ -602,31 +602,31 @@
   padding: 0px 10rem;
 }
 
+
 @media (max-width: 1200px) {
-  .admin-dashboard-frame {
-    gap: 24px;
-    flex-direction: row !important;
+  .payment-methods-overlay {
+    width: 95vw;
+    min-width: unset;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  .admin-dashboard-frame img {
-    width: 160px;
-  }
-  .admin-dashboard-frames {
+
+  .payment-methods-overlay .info-card {
     max-width: 95vw;
     padding: 24px 10px;
   }
 }
 
-
 @media (max-width: 900px) {
-  .admin-dashboard-frame {
-    gap: 12px;
-    flex-direction: row !important;
-  }
-  .admin-dashboard-frame img {
-    width: 100px;
+  .payment-methods-overlay {
+    width: 98vw;
+    bottom: -40px;
   }
 
-}
+  .payment-methods-overlay .info-card {
+    padding: 18px 4px;
+    font-size: 1rem;
+  }
 
   .payment-methods-flex {
     flex-direction: column;
@@ -636,7 +636,7 @@
   .payment-methods-img {
     padding: 0 10px;
     height: 28px;
-  
+  }
 }
 
 @media (max-width: 600px) {
@@ -663,6 +663,7 @@
     height: 22px;
   }
 }
+
 
 /* --- Payment Card Centered Overlay --- */
 .payment-card-center {
