@@ -370,6 +370,95 @@ function UniqueFeatures({ demoImages }: UniqueFeaturesProps) {
 
 
 
+function FeatureDescription() {
+  const features = [
+    {
+      title: "Hotel Management",
+      description:
+        "You may manage categories and subcategories, attributes, add-ons, and more in the Food area. Any restaurant can have things added to it. A food management tool will also be added to the Restaurant panel.",
+    },
+    {
+      title: "Hotel Management",
+      description:
+        "You may manage categories and subcategories, attributes, add-ons, and more in the Food area. Any restaurant can have things added to it. A food management tool will also be added to the Restaurant panel.",
+    },
+    {
+      title: "Hotel Management",
+      description:
+        "You may manage categories and subcategories, attributes, add-ons, and more in the Food area. Any restaurant can have things added to it. A food management tool will also be added to the Restaurant panel.",
+    },
+    {
+      title: "Hotel Management",
+      description:
+        "You may manage categories and subcategories, attributes, add-ons, and more in the Food area. Any restaurant can have things added to it. A food management tool will also be added to the Restaurant panel.",
+    },
+    {
+      title: "Hotel Management",
+      description:
+        "You may manage categories and subcategories, attributes, add-ons, and more in the Food area. Any restaurant can have things added to it. A food management tool will also be added to the Restaurant panel.",
+    },
+    {
+      title: "Hotel Management",
+      description:
+        "You may manage categories and subcategories, attributes, add-ons, and more in the Food area. Any restaurant can have things added to it. A food management tool will also be added to the Restaurant panel.",
+    },
+  ];
+
+  return (
+    <section id="feature-description" className="feature-description-section">
+      {/* Header */}
+      <div className="feature-desc-header">
+        <h2>
+          Our Uniques <span>Feature</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur sadipscing elit, sed diam nonumy
+          eirmod tempor invidunt ut labore et dolore.
+        </p>
+      </div>
+
+      {/* Cards */}
+      <div className="feature-desc-grid">
+        {features.map((feature, index) => (
+          <div key={index} className="feature-desc-card">
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+            <div className="feature-underline"></div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+
+
+
+
+
+
+
+function FinalSection() {
+  return (
+    <section id="final-section" className="final-section">
+      <div className="final-text">
+        <p className="final-thanks">Thanks For Watching</p>
+        <h2>
+          Do you like this <span>System?</span>
+        </h2>
+        <button className="buy-btn">Buy Now</button>
+      </div>
+
+      <div className="final-image">
+        <img src="/assets/sunset-beach.png" alt="Beach Illustration" />
+      </div>
+    </section>
+  );
+}
+
+
+
+
 
 
 
@@ -411,6 +500,8 @@ function App() {
       <AdminFullWebsiteDemo />
       <FAQSection />
       <UniqueFeatures />
+      <FeatureDescription />
+      <FinalSection/>
       {/* <Contact /> */}
       {/* <Footer /> */}
     </div>
@@ -429,7 +520,18 @@ function InfoCard({ title = "Card Title", description = "This is a simple card d
   return (
     <div className="info-card">
       <h3 className="info-card-title">{title}</h3>
-      <div className="info-card-underline"></div>
+      {/* <div className="info-card-underline"></div> */}
+      <div className="info-card-underline">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 10">
+    <path
+      d="M2 8C25 4 50 4 78 6C102 7 120 5 138 2"
+      stroke="#38b2ac"
+      strokeWidth="4"
+      strokeLinecap="round"
+      fill="none"
+    />F
+  </svg>
+</div>
       <p className="info-card-desc">{description}</p>
       {children}
     </div>

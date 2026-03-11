@@ -1,3 +1,257 @@
+/* src/app/FinalSection.css */
+
+#final-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 80px 60px;
+  background-color: #01263f;
+  color: #fff;
+  min-height: 380px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* left text part */
+#final-section .final-text {
+  flex: 1 1 45%;
+}
+
+#final-section .final-thanks {
+  font-size: 1.1rem;
+  color: #cdd6e6;
+  margin-bottom: 10px;
+}
+
+#final-section h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+#final-section h2 span {
+  color: #ffc107;
+}
+
+/* Buy Now button */
+#final-section .buy-btn {
+  background-color: #ffc107;
+  color: #002244;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#final-section .buy-btn:hover {
+  background-color: #ffb300;
+  transform: translateY(-2px);
+}
+
+/* right image part */
+#final-section .final-image {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#final-section .final-image img {
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  #final-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #final-section .final-text {
+    flex: 1 1 100%;
+  }
+
+  #final-section .final-image {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  #final-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- FeatureDescription Section ---------- */
+.feature-description-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.feature-desc-header {
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.feature-desc-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.feature-desc-header h2 span {
+  color: #007bff;
+  position: relative;
+}
+
+/* yellow underline under 'Feature' */
+.feature-desc-header h2 span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 4px;
+  background-color: #ffc107;
+  border-radius: 2px;
+}
+
+.feature-desc-header p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ---------- Cards Grid ---------- */
+.feature-desc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-desc-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 24px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-desc-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.feature-desc-card h3 {
+  font-size: 1.25rem;
+  color: #0f172a;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.feature-desc-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* teal underline under each card */
+.feature-underline {
+  width: 90px;
+  height: 5px;
+  background-color: #00a6a6;
+  border-radius: 3px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .feature-desc-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .feature-desc-card {
+    padding: 24px 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---------- Unique Features Section ---------- */
 .unique-features-section {
@@ -1210,13 +1464,24 @@
 
 }
 
-.info-card-underline {
+/* .info-card-underline {
   width: 160px;
   height: 3px;
   margin-top: 20px;
   background: #38b2ac;
   border-radius: 2px;
   margin-bottom: 18px;
+} */
+
+.info-card-underline {
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
+.info-card-underline svg {
+  width: 140px;
+  height: 10px;
+  display: block;
 }
 
 .info-card-desc {
