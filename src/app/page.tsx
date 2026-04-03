@@ -1,13 +1,18 @@
 "use client";
 // import React, { useState } from "react";
 import "./globals.css";
+
 // import "./DashboardDemo.css";
 
 // import "./App.css";
 
+
 function Hero() {
   return (
-    <section className="hero-split" style={{ position: "relative" }}>
+    <section id="hero" className="hero-section">
+    <p className="hero-title"><span className="brand3">Best</span> software in the market for booking and managing resorts and events!!!</p>  
+  
+    <div className="hero-split" style={{ position: "relative" }}>
       {/* Centered Payment Methods Card overlaying both sides */}
       <div className="payment-methods-overlay">
         <InfoCard title="Payment Methods" description="">
@@ -45,16 +50,22 @@ function Hero() {
         style={{ backgroundColor: "#0D2F3F", position: "relative" }}
       >
         <div className="mockup-wrapper">
-          <img
-            src="/assets/MocPC.png"
-            alt="Monitor Mockup"
-            className="monitor"
-          />
-          <img
-            src="/assets/Homepage.png"
-            alt="Homepage View"
-            className="screen"
-          />
+          <div className="mockimage" style={{ position: 'relative' }}>
+            <div className="monitor"></div>
+            
+
+
+            <img
+              src="/assets/Homepage.png"
+              alt="Homepage View"
+              className="screen"
+            />
+
+            <div className="monitor-stand">
+               <div className="stand-red-curve"></div>
+            </div>
+          </div>
+           
           {/* Mobile mockup image, positioned right */}
           <img
             src="/assets/Mobilemode.png"
@@ -63,9 +74,15 @@ function Hero() {
           />
         </div>
       </div>
+    </div>
     </section>
   );
 }
+
+
+
+
+
 
 
 // ---------- Dashboard Demo Section ----------

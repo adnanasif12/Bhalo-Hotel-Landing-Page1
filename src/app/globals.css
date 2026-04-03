@@ -413,9 +413,9 @@
 .faq-section {
   background: #fff;
   border-radius: 1rem;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   padding: 2rem;
-  
+
   flex-direction: column;
   gap: 2rem;
   align-items: center;
@@ -425,7 +425,7 @@
   margin-right: auto;
 }
 
-.faq-container{
+.faq-container {
   display: flex;
 }
 
@@ -446,54 +446,64 @@
   justify-content: center;
   align-items: center;
 }
+
 @media (min-width: 768px) {
   .faq-illustration-col {
     width: 50%;
   }
 }
+
 .faq-illustration-wrapper {
   position: relative;
   width: 18rem;
   height: 18rem;
   margin-bottom: 1rem;
 }
+
 .faq-illustration-img {
   object-fit: contain;
   width: 100%;
   height: 100%;
 }
+
 .faq-content-col {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 @media (min-width: 768px) {
   .faq-content-col {
     width: 50%;
   }
 }
+
 .faq-header {
   margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .faq-title {
   font-size: 2rem;
   font-weight: 800;
   color: #23272a;
   text-align: center;
 }
+
 @media (min-width: 768px) {
   .faq-title {
     font-size: 2.5rem;
     text-align: center;
   }
 }
+
 .faq-title-accent {
   color: #FFC107;
 }
+
 .faq-title-underline {
   width: 8rem;
   height: 0.25rem;
@@ -502,34 +512,41 @@
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
+
 .faq-subtitle {
   color: #6b7280;
   text-align: center;
   font-size: 1rem;
 }
+
 .faq-list {
   width: 100%;
 }
+
 .faq-item {
   border-bottom: 1px solid #e5e7eb;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
 }
+
 .faq-item-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .faq-item-question {
   font-weight: 600;
   font-size: 1.125rem;
   color: #23272a;
 }
+
 .faq-item-divider {
   color: #bdbdbd;
   font-size: 1.5rem;
 }
+
 .faq-item-answer {
   color: #6b7280;
   font-size: 0.95rem;
@@ -915,6 +932,7 @@
 .navy {
   background-color: #0b2842;
 }
+
 .navy:hover {
   background-color: #14324e;
 }
@@ -923,6 +941,7 @@
   background-color: #f5b700;
   color: #0b0b0b;
 }
+
 .yellow:hover {
   background-color: #ffd84b;
 }
@@ -930,6 +949,7 @@
 .teal {
   background-color: #007a78;
 }
+
 .teal:hover {
   background-color: #019b96;
 }
@@ -937,6 +957,7 @@
 .teal-light {
   background-color: #00a9a7;
 }
+
 .teal-light:hover {
   background-color: #11c0bd;
 }
@@ -1241,10 +1262,11 @@
 
 
 /* Payment Methods Overlay Styles */
+
 .payment-methods-overlay {
   position: absolute;
   left: 50%;
-  bottom: -200px; /* Move lower by decreasing the negative value (was -80px) */
+  bottom: 200px; /* Move card further down (increase value for more space) */
   transform: translateX(-50%);
   width: 1170px;
   /* max-width: 95vw; */
@@ -1439,11 +1461,14 @@
   padding: 32px 24px;
   max-width: 100rem;
   margin: 32px auto;
+  margin-top: 1300px;
   position: relative;
   z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* padding-top: 700px; */
+  /* gap: 50px; */
 }
 
 .info-card-title {
@@ -1451,7 +1476,7 @@
   font-weight: 700;
   font-size: 2.5rem;
   margin-bottom: 12px;
-  font-size: semibold; 
+  font-size: semibold;
   padding: 35px 0;
   height: 55px;
   /* top: 1020px; */
@@ -1490,17 +1515,63 @@
   margin-bottom: 8px;
 }
 
+
+
+
 /* --- HERO SPLIT SECTION & HERO IMAGES --- */
+.hero-section {
+  background: #0D2F3F;
+  color: #fff;
+  padding: 8px 4px 32px 24px;
+  /* padding: 40px; */
+
+}
+
+
+
+
+
 .hero-split {
   display: flex;
   flex-wrap: wrap;
-  background: #0D2F3F;
-  color: #fff;
-  padding: 48px 24px 32px 24px;
+  /* margin-top: 198; */
+
   align-items: center;
-  padding: 40px;
+
   justify-content: space-between;
 }
+
+.hero-title {
+  width: 1170px;
+  height: 50px;
+  opacity: 1;
+  margin-top: 84px;
+  margin-left: 135px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 40px;
+  line-height: 50px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+
+.brand3 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 36px;
+  /* leading-trim: NONE; */
+  line-height: 50px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #FFC62D;
+}
+
+
+
+
 
 .hero-left {
   flex: 1 1 350px;
@@ -1508,54 +1579,102 @@
   max-width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 40px;
-  padding: 10px;
+  /* justify-content: center; */
+  /* border-radius: 40px; */
+  /* padding: 10px; */
   margin: 0;
 }
 
 .product-box {
-  background: #16323a;
+  /* background: #16323a; */
   border-radius: 22px;
-  padding: 32px 24px 24px 24px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  /* padding: 32px 24px 24px 24px; */
+  margin-left: 135px;
+
+  /* box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); */
   margin-bottom: 16px;
 }
 
 .brand {
-  color: #ffd600;
+  color: #FFC62D;
+  /* margin-left: 135px; */
   font-weight: 700;
+  font-style: bold;
   font-size: 2rem;
+  font-family: 'Barlow', sans-serif;
 }
 
 .brand2 {
-  color: #38b2ac;
+  color: #1F7F7B;
   font-weight: 700;
+  font-style: bold;
   font-size: 2rem;
+  font-family: 'Barlow', sans-serif;
 }
 
 .product-box p {
   margin: 16px 0 24px 0;
   color: #e0e0e0;
+  /* margin-left: 135px; */
+  width: 446;
+  height: 90;
+  top: 279px;
+  /* left: 135px; */
+  /* angle: 0 deg; */
+  opacity: 1;
+
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  /* leading-trim: NONE; */
+  line-height: 30px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
+
 }
 
 .hero-buttons {
   display: flex;
   gap: 16px;
   margin-bottom: 32px;
+
 }
 
 .browse-btn {
   background: #1F7F7B;
-  color: #fff;
+  color: #FFFFFF;
   border: none;
   padding: 20px 18px;
   border-radius: 8px;
   font-size: .9rem;
+
   font-weight: 500;
   cursor: pointer;
   transition: background 0.2s;
   width: 180px;
+  width: 220;
+  height: 70;
+  top: 415px;
+  left: 136px;
+  /* angle: 0 deg; */
+  opacity: 1;
+  border-radius: 12px;
+
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 22px;
+  /* leading-trim: NONE; */
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+
+
 }
 
 .browse-btn:hover {
@@ -1617,41 +1736,112 @@
   background-color: #0D2F3F;
   padding: 10px;
   margin: 0;
+
+
 }
 
 .mockup-wrapper {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 780px;
   margin: 0 auto;
-  background-color: #0D2F3F;
   overflow: hidden;
-  border-radius: 40px;
+  border-radius: 20px;
+  height: 580px;
 }
 
-.monitor {
+.mockimage {
   width: 100%;
-  height: 580px;
-  display: block;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   filter: brightness(1);
-  border-radius: 40px;
+  border-radius: 20px;
   z-index: 1;
   background-color: #0D2F3F;
   box-shadow: 0 0 96px 32px #0D2F3F, 0 0 48px 16px #16323a;
 }
 
+.monitor {
+  width: 80%;
+  height: 70%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(1);
+  border-radius: 20px;
+  z-index: 1;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 96px 32px #0D2F3F, 0 0 48px 16px #16323a;
+}
+
 .screen {
   position: absolute;
-  top: 18.0%;
-  left: 0.0%;
-  width: 90%;
-  height: 56%;
+  top: 15.0%;
+  left: 50% ;
+  width: 78%;
+  height: 70%;
+  padding: 10px;
+  transform: translateX(-50%);
   object-fit: cover;
   border-radius: 16px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
   opacity: 1;
   z-index: 2;
   filter: brightness(1.05);
+
+
+
 }
+
+
+.monitor-stand {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;          /* বেসকে একটু চওড়া করা হলো */
+  height: 130px;         /* বেসের গভীরতা বাড়ানো হলো */
+  background: linear-gradient(to bottom, #f6f7f8 0%, #dee1e3 70%, #cacdcf 100%);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+  z-index: 3;
+
+  /* 🧠 বাস্তবসম্মত curve shape */
+  clip-path: polygon(
+    /* 35% 0%, 
+    65% 0%,   
+    80% 50%,  
+    92% 70%,  
+    7% 90%,  
+    7% 90%,   
+    8% 70%,   
+    20% 50%    */
+
+
+    25% 0%,   /* উপরের বাম */
+    77% 0%,   /* উপরের ডান */
+    80% 50%,  /* ডান পাশের ঢাল */
+    92% 70%,  /* ডানদিক নিচের অংশ */
+    7% 70%,   /* বামদিক নিচে কিন্তু তত নিচে নয় */
+    7% 68%,   /* এই লাইন একই রেখে শুধু একটু উপরে তুলেছি */
+    8% 70%,   /* বাম নিচের অংশ */
+    20% 50%   /* নিচের ঢাল */
+    
+  );
+
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+
+
+/* 🔻 নিচের দিকের লাল কার্ভ অংশ */
+
+
+
 
 .mobile-mockup {
   position: absolute;
@@ -1801,6 +1991,4 @@
 }
 
 @import "tailwindcss";
-
-
-
+@import "@fontsource/roboto/index.css";

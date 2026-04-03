@@ -1,3 +1,96 @@
+<section className="hero-split" style={{ position: "relative" }}>
+      {/* Centered Payment Methods Card overlaying both sides */}
+      <div className="payment-methods-overlay">
+        <InfoCard title="Payment Methods" description="">
+          <div className="payment-methods-flex">
+            <img src="/assets/paypal.png" alt="PayPal" className="payment-methods-img" />
+            <img src="/assets/sslcommerz.png" alt="SSLCommerz" className="payment-methods-img" />
+            <img src="/assets/stripe.png" alt="Stripe" className="payment-methods-img" />
+          </div>
+        </InfoCard>
+        {/* Dashboard Demo Section below InfoCard */}
+
+      </div>
+      <div className="hero-left">
+        <div className="product-box">
+          <h3>
+            <span className="brand">Gusto</span>{" "}
+            <span className="brand2">Bookings</span>
+          </h3>
+          <p>
+            Your ultimate booking solution for single/multiple resort and event booking/management system in the market
+          </p>
+          <div className="hero-buttons">
+            <button className="browse-btn">Browse Website</button>
+            <button className="admin-btn">Browse Admin Panel</button>
+          </div>
+          <div className="buy-now">
+            <span className="buy-circle">
+              Buy Now <span className="arrow">→</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="hero-right"
+        style={{ backgroundColor: "#0D2F3F", position: "relative" }}
+      >
+        <div className="mockup-wrapper">
+          <img
+            src="/assets/MocPC.png"
+            alt="Monitor Mockup"
+            className="monitor"
+          />
+          <img
+            src="/assets/Homepage.png"
+            alt="Homepage View"
+            className="screen"
+          />
+          {/* Mobile mockup image, positioned right */}
+          <img
+            src="/assets/Mobilemode.png"
+            alt="Mobile Mockup"
+            className="mobile-mockup"
+          />
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
