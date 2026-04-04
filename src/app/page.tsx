@@ -40,7 +40,7 @@ function Hero() {
           </div>
           <div className="buy-now">
             <span className="buy-circle">
-              Buy Now <span className="arrow">→</span>
+              <span className="buy-text">Buy Now</span> <span className="arrow">→</span>
             </span>
           </div>
         </div>
