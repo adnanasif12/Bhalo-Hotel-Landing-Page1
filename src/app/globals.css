@@ -1,4 +1,5 @@
 
+
 /* src/app/FinalSection.css */
 
 #final-section {
@@ -116,26 +117,53 @@
 
 /* ---------- FeatureDescription Section ---------- */
 .feature-description-section {
-  padding: 80px 20px;
+  /* padding: 80px 20px; */
   text-align: center;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+
+
+  width: 100%;
+  background: #ffffff;
+  /* padding: 100px 0; */
+  padding-left: 135px;
+  padding-right: 135px;
+  
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 60px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .feature-desc-header {
-  max-width: 700px;
-  margin: 0 auto 50px;
+  /* width: 100%; */
+
+  max-width: 100%;
+  
+  /* margin: 0 auto 50px; */
 }
 
 .feature-desc-header h2 {
-  font-size: 2.2rem;
+  /* font-size: 2.2rem;
   font-weight: 700;
   color: #0f172a;
-  margin-bottom: 10px;
+  margin-bottom: 10px; */
+
+  color: #0d2f3f;
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: Barlow, sans-serif;
 }
 
 .feature-desc-header h2 span {
   color: #007bff;
   position: relative;
+  font-size: 2.2rem;
+    font-weight: 700;
+    font-family: Barlow, sans-serif;
 }
 
 /* yellow underline under 'Feature' */
@@ -152,17 +180,22 @@
 
 .feature-desc-header p {
   color: #555;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.6;
+  font-family: Barlow, sans-serif;
+
 }
 
 /* ---------- Cards Grid ---------- */
 .feature-desc-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  max-width: 1100px;
-  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  gap: 58px;
+
+  /* margin: 0 auto; */
 }
 
 .feature-desc-card {
@@ -180,15 +213,18 @@
 }
 
 .feature-desc-card h3 {
-  font-size: 1.25rem;
-  color: #0f172a;
+  font-size: 2rem;
+  color: #0D2F3F;
   font-weight: 700;
   margin-bottom: 12px;
 }
 
 .feature-desc-card p {
-  font-size: 0.95rem;
-  color: #555;
+  width: 450px;
+  font-size: 1.25rem;
+  font-family: Barlow, sans-serif;
+  font-weight: 500;
+  color: #626262;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -258,38 +294,49 @@
 .unique-features-section {
   width: 100%;
   background: #ffffff;
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  padding-left: 135px;
+  padding-right: 135px;
+
   display: flex;
   flex-direction: column;
+
   align-items: center;
   gap: 60px;
+  margin-top: 60px;
+
+
 }
 
 .unique-features-header {
   text-align: center;
-  max-width: 700px;
+  max-width: 100%;
+  
+
 }
 
 .unique-features-header h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #0b0b0b;
+  color: #0D2F3F;
   margin-bottom: 10px;
 }
 
 .unique-features-header p {
-  font-size: 1rem;
-  color: #555;
+  font-size: 1.25rem;
+  color: #626262;
   line-height: 1.6;
+  font-family: Barlow, sans-serif;
 }
 
 /* grid for all demo cards */
 .unique-features-grid {
-  width: 90%;
-  max-width: 1200px;
+    width: 100%;
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+ 
+  gap: 58px;
 }
 
 .unique-features-card {
@@ -346,7 +393,7 @@
 
 @media (max-width: 767px) {
   .unique-features-section {
-    padding: 80px 0;
+    padding: 40px 16px;
     gap: 40px;
   }
 
@@ -595,38 +642,69 @@
 .Admin-full-website-demo-section {
   width: 100%;
   background: #ffffff;
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  max-width: 100%;
+  padding-left: 135px;
+  padding-right: 135px;
+  margin-top: 58px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 60px;
+
 }
 
 .Admin-demo-header {
   text-align: center;
-  max-width: 700px;
+  max-width: 900px;
+    font-family: Barlow, sans-serif;
+  /* color: #0D2F3F; */
+
+
 }
 
 .Admin-demo-header h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #0b0b0b;
+  color: #0D2F3F;
+   font-size: 2.2rem;
   margin-bottom: 10px;
 }
 
 .Admin-demo-header p {
-  font-size: 1rem;
+  /* font-size: 1rem;
   color: #555;
+  line-height: 1.6; */
+  color: #333333;
   line-height: 1.6;
+    /* width: 350px; */
+
+    font-weight: 400;
+    margin-top: 30px;
+    font-size: 1.25rem;
+
+    font-family: Roboto, sans-serif;
+
+  margin-bottom: 18px;
 }
 
 /* grid for all demo cards */
 .Admin-demo-grid {
-  width: 90%;
-  max-width: 1200px;
+  /* width: 90%; */
+  /* max-width: 1200px; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+   width: 100%;
+  max-width: 100%;
+    border-radius: 20px;
+
+
+
+  display: grid;
+  /* margin-right: 135px; */
+  
+
 }
 
 .Admin-demo-card {
@@ -735,37 +813,56 @@
 
 /* ---------- Full Website Demo Section ---------- */
 .full-website-demo-section {
-  width: 100%;
+  /* height: 710px; */
   background: #ffffff;
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  margin-left: 135px;
+  margin-right: 135px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 60px;
+  
+
 }
 
 .demo-header {
   text-align: center;
-  max-width: 700px;
+  max-width: 900px;
+    font-family: Barlow, sans-serif;
+
 }
 
+.demo-signature-underline {
+  display: flex;
+  justify-content: center;
+  margin: -18px auto 20px auto;
+
+  height: 38px;
+  width: 260px;
+}
+
+
+
 .demo-header h2 {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   font-weight: 700;
-  color: #0b0b0b;
+  color: #0D2F3F;
   margin-bottom: 10px;
+  font-size: 2.2rem;
 }
 
 .demo-header p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #555;
   line-height: 1.6;
 }
 
 /* grid for all demo cards */
 .demo-grid {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 100%;
+    /* margin-right: 135px; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
@@ -773,16 +870,22 @@
 
 .demo-card {
   position: relative;
+    /* margin-right: 135px; */
+
   border-radius: 12px;
   background: #fff;
   box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 700px;
+
 }
 
 .demo-card img {
   width: 100%;
-  height: auto;
+  height: 100%;
+
+
   display: block;
   object-fit: cover;
 }
@@ -893,9 +996,11 @@
 
 /* ---------- Feature Highlights Section ---------- */
 .feature-highlights-section {
-  background: #ffffff;
+  background: hsl(0, 0%, 100%);
   width: 100%;
-  padding: 100px 0;
+  padding: 100px 135px;
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -904,23 +1009,47 @@
 
 /* Top grid of color cards */
 .feature-cards-grid {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 100%;
+    /* border-radius: 20px; */
+
+
+
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  gap: 58px;
+
+
 }
 
 .feature-card {
-  border-radius: 10px;
+  width: 100%;
+
+  height: 250px;
+  border-radius: 20px;
   padding: 22px 18px;
   text-align: center;
   font-weight: 600;
-  font-size: 1rem;
+  font-style: normal;
+  font-size: 2.2rem;
+  padding: 150px;
+
+
+
+
+  /* font-weight: 20px; */
+
+
+
   color: #ffffff;
   box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature-card:hover {
@@ -932,6 +1061,8 @@
 /* color variants */
 .navy {
   background-color: #0b2842;
+ 
+
 }
 
 .navy:hover {
@@ -965,8 +1096,8 @@
 
 /* Bottom Section */
 .feature-bottom {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -975,34 +1106,61 @@
 
 .feature-text {
   flex: 1;
+
+  
 }
 
 .feature-text h3 {
-  font-size: 1.9rem;
-  color: #0b0b0b;
+  height: 80px;
+   font-weight: bold;
+  font-size: 2rem;
+  color: #0D2F3F;
+  
   margin-bottom: 12px;
+  font-family: Barlow, sans-serif;
+  width: 350px;
+  /* font-size: semibold; */
+  font-style: bold;
+  
+
+
+ 
+  
+
 }
 
 .feature-text p {
-  color: #444444;
+  color: #333333;
   line-height: 1.6;
+    width: 350px;
+    font-weight: 400;
+    margin-top: 30px;
+    font-size: 1.25rem;
+
+    font-family: Roboto, sans-serif;
+
   margin-bottom: 18px;
 }
 
 .feature-text ul {
   list-style: none;
+
   padding: 0;
   margin: 0;
 }
 
 .feature-text ul li {
   font-weight: 600;
-  color: #007a78;
+  color: #0D2F3F;
   margin-bottom: 6px;
+
+  width: 350px;
+    font-weight: 400;    
+    font-size: 1.55rem;
 }
 
 .feature-image {
-  flex: 1;
+  flex: 2;
   text-align: right;
 }
 
@@ -1081,7 +1239,7 @@
   width: 100%;
   background: #ffffff;
   /* এই margin-top টা Payment Methods কার্ডের নিচ থেকে জায়গা তৈরি করবে */
-  margin-top: 200px;
+  margin-top: 270px;
   padding: 60px 0 100px;
   display: flex;
   justify-content: center;
@@ -1093,7 +1251,9 @@
 
 .dashboard-demo-container {
   width: 100%;
-  max-width: 1200px;
+  margin-left: 135px;
+  margin-right: 135px;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1101,45 +1261,154 @@
   gap: 32px;
 }
 
+
+
+.dashboard-demo-left {
+  width: 60%;
+  max-width: 60%;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  /* Box shadow on left, right, and bottom sides only */
+  box-shadow: 0px 30px 20px 40px rgba(0, 0, 0, 0.1);
+  position: relative;
+
+
+  z-index: 1;
+  min-height: 520px; /* Increased height */
+  height: 100%;
+
+
+}
+
+
+/* Add blue curve under dashboard demo */
+.dashboard-demo-left::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+
+
+  transform: translateX(-50%);
+  width: 120%;
+  height: 60px;
+    /* Add drop shadow to the SVG background */
+    filter: drop-shadow(0px 24px 24px rgba(0, 0, 0, 0.48));
+  z-index: 0;
+  pointer-events: none;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 160' preserveAspectRatio='none'><path d='M0,0 L0,0 Q30,70 190,100 L550,100 Q760,100 800,0 L800,0 Z' fill='%23ECEDEF' /></svg>") no-repeat center bottom;
+  background-size: cover;
+
+}
+
+.section-underline {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-underline::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;          /* টেক্সটের নিচে দূরত্ব */
+  transform: translateX(-50%);
+  width: 20%;            /* আন্ডারলাইনের দৈর্ঘ্য */
+  height: 8px;            /* রেখার মোটা‑পাতলা */
+  background-color: #D0D0D0;  /* হলুদ রঙ (#ffcc00 বা #FFD700 খুব সুন্দর লাগে) */
+  border-radius: 2px;     /* সামান্য মসৃণ প্রান্ত */
+}
+
+
+
+
+.demo-desktop-preview {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #ECEDEF;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 /* Left side preview image */
 .dashboard-demo-image img {
-  flex: 0 0 55%;
-  width: 100%;
-  max-width: 650px;
-  border-radius: 16px;
-  box-shadow: 0px 24px 44px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-}
+    flex: 0 0 55%;
+    width: 95%;
+    /* padding-bottom: 40px; */
+    max-width: 98%;
+    /* min-height: 520px; */
+
+
+    height: 100%;
+
+
+    /* padding: 20px 10px 30px 10px; */
+    border-radius: 40px;
+    /* box-shadow: 0px 24px 44px rgba(0, 0, 0, 0.1); */
+    object-fit: cover;
+    display: block;
+    margin: auto;
+  }
+
+  
+
+
+
+
+
+
+
+
 
 /* Right side info list */
 .dashboard-demo-info {
   /* flex: 1; */
   flex: 0 0 40%;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  /* align-items: center; */
   display: flex;
   flex-direction: column;
   gap: 28px;
 }
 
 .demo-info-item {
+
+ 
+
   display: flex;
   align-items: flex-start;
+  height: 33.33%;
   gap: 16px;
   background: #ffffff;
   padding: 20px 26px;
   border-radius: 12px;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 8px 24px rgba(134, 125, 125, 0.18);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .demo-info-item:hover {
   transform: translateY(-4px);
-  box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.22);
+
 }
 
 .demo-icon-box {
-  height: 38px;
-  width: 38px;
-  min-width: 38px;
+  height: 45px;
+  width: 45px;
+  min-width: 45px;
+  /* padding-top: 40px; */
+  margin-top: 19px;
+
   background-color: #00a9a7;
   color: #ffffff;
   display: flex;
@@ -1151,7 +1420,8 @@
 
 .demo-info-item p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 2.7rem;
+
   color: #0b0b0b;
   line-height: 1.5;
 }
@@ -1269,7 +1539,10 @@
   left: 50%;
   bottom: 200px; /* Move card further down (increase value for more space) */
   transform: translateX(-50%);
+  margin-top: 162px;
   width: 1170px;
+  height: 325px;
+
   /* max-width: 95vw; */
   z-index: 30;
   display: flex;
@@ -1301,6 +1574,8 @@
   justify-content: space-around;
   align-items: center;
   padding: 12px 0;
+  margin-top: 24px;
+  
 }
 
 .payment-methods-img {
@@ -1480,40 +1755,35 @@
   font-size: semibold;
   padding: 35px 0;
   height: 55px;
-  /* top: 1020px; */
-
-  /* width: 518;
-  height: 55;
-  top: 820px;
-  left: 461px;
-  opacity: 1; */
+ 
 
 }
 
-/* .info-card-underline {
-  width: 160px;
-  height: 3px;
-  margin-top: 20px;
-  background: #38b2ac;
-  border-radius: 2px;
-  margin-bottom: 18px;
-} */
 
 .info-card-underline {
-  margin-top: 20px;
-  margin-bottom: 18px;
+  margin-top: 19px;
+  margin-bottom: 20px;
+}
+
+.info-card-underline-red {
+  margin-top: 14px;
+  margin-bottom: 20px;
 }
 
 .info-card-underline svg {
-  width: 140px;
-  height: 10px;
+  width: 260px;     /* একটু বড় করলাম */
+  margin-top: 1px;
+  height: 24px;     /* ঢেউয়ের উচ্চতা বাড়ালো */
   display: block;
 }
 
-.info-card-desc {
-  color: #444;
-  text-align: center;
-  margin-bottom: 8px;
+.info-card-underline-red svg {
+  width: 260px;
+  margin-top: 2px;
+  height: 24px;
+  display: block;
+  stroke: red; /* Only the line will be red */
+  fill: none;  /* No fill, just the stroke */
 }
 
 
@@ -1524,7 +1794,7 @@
   background: #0D2F3F;
   color: #fff;
   padding: 8px 4px 32px 24px;
-  /* padding: 40px; */
+  height: 845px;
 
 }
 
@@ -1960,11 +2230,11 @@
 .dot-pattern {
   position: absolute;
   width: 321.92px;
-  height: 333.39px;
+  height: 475px;
   border-radius: 0 0 0 24px;
   overflow: hidden;
   top: 630px;
-  left: 80px;
+  left: 7px;
   z-index: 20;
   pointer-events: none;
   transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s;
@@ -1973,12 +2243,12 @@
 .dot-pattern::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 110px;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(red 16%, transparent 17%);
-  background-size: 48px 48px;
+  background-image: radial-gradient(#ACC9D1 16%, transparent 17%);
+  background-size: 53.65px 47.63px;
   opacity: 0.7;
 }
 

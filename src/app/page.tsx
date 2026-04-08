@@ -2,6 +2,8 @@
 // import React, { useState } from "react";
 import "./globals.css";
 
+
+
 // import "./DashboardDemo.css";
 
 // import "./App.css";
@@ -90,34 +92,38 @@ function DashboardDemo() {
   return (
     <section id="dashboard-demo" className="dashboard-demo-section">
       <div className="dashboard-demo-container">
+
         {/* Left Side - Dashboard Preview Image */}
-        <div className="dashboard-demo-image">
-          <img
-            src="/assets/Admin.png"
-            alt="Dashboard Preview"
-          />
+        <div className="dashboard-demo-left ">
+          <div className="demo-desktop-preview section-underline">
+          <div className="dashboard-demo-image">
+            <img
+              src="/assets/Admin.png"
+              alt="Dashboard Preview"
+            />
+          </div>
         </div>
+        </div>
+
 
         {/* Right Side - Feature Information */}
         <div className="dashboard-demo-info">
           <div className="demo-info-item">
             <div className="demo-icon-box">📊</div>
             <p>
-              Book, manage and automate your vacation rental or resort
-              system easily from one dashboard.
+              Book, Manage and automate your vacation rental business with Booking Manager Pro.
             </p>
           </div>
 
           <div className="demo-info-item">
             <div className="demo-icon-box">🏨</div>
-            <p>Hotel and event management integrated in one simple interface.</p>
+            <p>Hotels and event booking in a single app!</p>
           </div>
 
           <div className="demo-info-item">
             <div className="demo-icon-box">🌍</div>
             <p>
-              Access your full inventory anywhere with responsive dashboard
-              view.
+              Best app in the market for single/ multiple resort.
             </p>
           </div>
         </div>
@@ -188,6 +194,11 @@ function FullWebsiteDemo({ demoImages }: FullWebsiteDemoProps) {
     <section id="full-website-demo" className="full-website-demo-section">
       <div className="demo-header">
         <h2>Full Website Demo</h2>
+        <div className="demo-signature-underline">
+          <svg width="260" height="38" viewBox="0 0 260 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 32 Q170 0 250 18" stroke="#FFC107" stroke-width="7" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
         <p>
           Showcase all pages of your system in a modern responsive view.
           Hover to see live‑style effects and use different images for every page preview.
@@ -238,6 +249,11 @@ function AdminFullWebsiteDemo({ demoImages }: AdminFullWebsiteDemoProps) {
     <section id="Admin-full-website-demo" className="Admin-full-website-demo-section">
       <div className="Admin-demo-header">
         <h2>Full Website Demo</h2>
+        <div className="demo-signature-underline">
+          <svg width="260" height="38" viewBox="0 0 260 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 32 Q170 0 250 18" stroke="#FFC107" stroke-width="7" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
         <p>
           Showcase all pages of your system in a modern responsive view.
           Hover to see live‑style effects and use different images for every page preview.
@@ -302,7 +318,11 @@ function FAQSection() {
             <h2 className="faq-title">
               Have any <span>Questions<span className="faq-title-accent">?</span></span>
             </h2>
-            <div className="faq-title-underline" />
+          <div className="demo-signature-underline">
+            <svg width="260" height="38" viewBox="0 0 260 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M30 32 Q170 0 250 18" stroke="#FFC107" stroke-width="7" stroke-linecap="round" fill="none"/>
+            </svg>
+          </div>
             <p className="faq-subtitle">
               Lorem ipsum dolor sit amet, consectetur sadipscing elit, sed diam nonumy eirmod tempor invidunt ut labore et dolore.
             </p>
@@ -358,7 +378,12 @@ function UniqueFeatures({ demoImages }: UniqueFeaturesProps) {
   return (
     <section id="unique-features" className="unique-features-section">
       <div className="unique-features-header">
-        <h2>Unique Features</h2>
+        <h2>Our Unique Features</h2>
+        <div className="demo-signature-underline">
+            <svg width="260" height="38" viewBox="0 0 260 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M30 32 Q170 0 250 18" stroke="#FFC107" stroke-width="7" stroke-linecap="round" fill="none"/>
+            </svg>
+        </div>
         <p>
           Showcase all pages of your system in a modern responsive view.
           Hover to see live‑style effects and use different images for every page preview.
@@ -428,6 +453,11 @@ function FeatureDescription() {
         <h2>
           Our Uniques <span>Feature</span>
         </h2>
+        <div className="demo-signature-underline">
+            <svg width="260" height="38" viewBox="0 0 260 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M30 32 Q170 0 250 18" stroke="#FFC107" stroke-width="7" stroke-linecap="round" fill="none"/>
+            </svg>
+        </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur sadipscing elit, sed diam nonumy
           eirmod tempor invidunt ut labore et dolore.
@@ -440,7 +470,7 @@ function FeatureDescription() {
           <div key={index} className="feature-desc-card">
             <h3>{feature.title}</h3>
             <p>{feature.description}</p>
-            <div className="feature-underline"></div>
+            {/* <div className="feature-underline"></div> */}
           </div>
         ))}
       </div>
@@ -533,27 +563,63 @@ type InfoCardProps = {
   description?: string;
   children?: React.ReactNode;
 };
-function InfoCard({ title = "Card Title", description = "This is a simple card description.", children }: InfoCardProps) {
+// function InfoCard({ title = "Card Title", description = "This is a simple card description.", children }: InfoCardProps) {
+//   return (
+//     <div className="info-card">
+//       <h3 className="info-card-title">{title}</h3>
+//       <div className="info-card-underline">
+//         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 40">
+//           <path d="M10 30 Q 80 10, 160 20 Q 240 30, 310 15" stroke="#188a89" strokeWidth="7" fill="none" strokeLinecap="round"/>
+//           <path d="M20 35 Q 100 25, 170 30 Q 250 35, 300 25" stroke="#188a89" strokeWidth="5" fill="none" strokeLinecap="round"/>
+//           <path d="M15 25 Q 90 20, 150 25 Q 230 35, 305 20" stroke="#188a89" strokeWidth="4" fill="none" strokeLinecap="round"/>
+//         </svg>
+//       </div>
+//       <p className="info-card-desc">{description}</p>
+//       {children}
+//     </div>
+//   );
+// }
+
+
+
+function InfoCard({
+  title = "Card Title",
+  description = "This is a simple card description.",
+  children
+}: InfoCardProps) {
   return (
     <div className="info-card">
       <h3 className="info-card-title">{title}</h3>
-      {/* <div className="info-card-underline"></div> */}
-      <div className="info-card-underline">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 10">
-    <path
-      d="M2 8C25 4 50 4 78 6C102 7 120 5 138 2"
-      stroke="#38b2ac"
-      strokeWidth="4"
-      strokeLinecap="round"
-      fill="none"
-    />F
-  </svg>
-</div>
+
+      <div style={{ position: "relative", height: "28px" }}>
+        <div className="info-card-underline-red" style={{ position: "absolute", left: "50%", top: "-7px", width: "260px", transform: "translateX(-50%)" }}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 40" preserveAspectRatio="none">
+            <path d="M5 25 Q80 5 160 20 Q240 35 315 15" strokeWidth="7" fill="none" strokeLinecap="round" opacity="0.9"/>
+            <path d="M10 30 Q95 15 165 25 Q250 40 310 22" strokeWidth="5.5" fill="none" strokeLinecap="round" opacity="0.8"/>
+            <path d="M8 20 Q85 10 150 22 Q235 32 300 18" strokeWidth="4" fill="none" strokeLinecap="round" opacity="0.7"/>
+          </svg>
+        </div>
+        <div className="info-card-underline" style={{ position: "absolute", left: "50%", top: 0, width: "260px", transform: "translateX(-50%)" }}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 40" preserveAspectRatio="none">
+            <path d="M5 25 Q80 5 160 20 Q240 35 315 15" stroke="#188a89" strokeWidth="7" fill="none" strokeLinecap="round" opacity="0.9"/>
+            <path d="M10 30 Q95 15 165 25 Q250 40 310 22" stroke="#188a89" strokeWidth="5.5" fill="none" strokeLinecap="round" opacity="0.8"/>
+            <path d="M8 20 Q85 10 150 22 Q235 32 300 18" stroke="#188a89" strokeWidth="4" fill="none" strokeLinecap="round" opacity="0.7"/>
+          </svg>
+        </div>
+      </div>
+
       <p className="info-card-desc">{description}</p>
       {children}
     </div>
   );
 }
+
+
+
+
+
+
+
 
 
 export default App;
