@@ -140,12 +140,34 @@ function FeatureHighlights() {
     <section id="feature-highlights" className="feature-highlights-section">
       {/* Top Feature Cards */}
       <div className="feature-cards-grid">
-        <div className="feature-card navy">Compatible with any device</div>
-        <div className="feature-card yellow">Convenient Search & Filter system</div>
-        <div className="feature-card teal">Sign up with Facebook & Google</div>
-        <div className="feature-card teal-light">Details page with all informations</div>
-        <div className="feature-card navy">Effortless payment gateway</div>
-        <div className="feature-card yellow">Clean & Simple Admin panel</div>
+        {[
+          { text: "Compatible with any device", className: "navy" },
+          { text: "Convenient Search & Filter system", className: "yellow" },
+          { text: "Sign up with Facebook & Google", className: "teal" },
+          { text: "Details page with all informations", className: "teal-light" },
+          { text: "Effortless payment gateway", className: "navy" },
+          { text: "Clean & Simple Admin panel", className: "yellow" },
+        ].map((item, idx) => (
+          <div key={idx} className={`feature-card ${item.className}`} style={{ position: "relative", height: "80px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+            <span style={{ position: "relative", zIndex: 1 }}>{item.text}</span>
+            <div style={{ position: "relative", height: "28px", width: "100%", marginTop: "4px" }}>
+              <div className="info-card-underline-red" style={{ position: "absolute", left: "50%", top: "-7px", width: "260px", transform: "translateX(-50%)" }}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 40" preserveAspectRatio="none">
+                  <path d="M5 25 Q80 5 160 20 Q240 35 315 15" strokeWidth="7" fill="none" strokeLinecap="round" opacity="0.9"/>
+                  <path d="M10 30 Q95 15 165 25 Q250 40 310 22" strokeWidth="5.5" fill="none" strokeLinecap="round" opacity="0.8"/>
+                  <path d="M8 20 Q85 10 150 22 Q235 32 300 18" strokeWidth="4" fill="none" strokeLinecap="round" opacity="0.7"/>
+                </svg>
+              </div>
+              <div className="info-card-underline" style={{ position: "absolute", left: "50%", top: 0, width: "260px", transform: "translateX(-50%)" }}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 40" preserveAspectRatio="none">
+                  <path d="M5 25 Q80 5 160 20 Q240 35 315 15" stroke="#188a89" strokeWidth="7" fill="none" strokeLinecap="round" opacity="0.9"/>
+                  <path d="M10 30 Q95 15 165 25 Q250 40 310 22" stroke="#188a89" strokeWidth="5.5" fill="none" strokeLinecap="round" opacity="0.8"/>
+                  <path d="M8 20 Q85 10 150 22 Q235 32 300 18" stroke="#188a89" strokeWidth="4" fill="none" strokeLinecap="round" opacity="0.7"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* Bottom Description + Device Images */}
